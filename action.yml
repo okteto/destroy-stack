@@ -16,7 +16,6 @@ runs:
   args:
     - ${{ inputs.namespace }}
     - ${{ inputs.name }}
-    - ${{ inputs.build }}
     - ${{ inputs.working-directory }}
 branding:
   color: 'green'
