@@ -17,7 +17,11 @@ The Okteto namespace to use. If not specified it will use the namespace specifie
 
 ### `name`
 
-The name of the deployment. If not specified it will use the one in your `okteto.yml` file.
+The name of the stack. If not specified it will use the one in your manifest file.
+
+### `file` 
+
+The path to the manifest file. If not specified, it will default to `docker-compose.yaml` or ` okteto-stack.yaml`.
 
 ### `working-directory`
 

@@ -7,6 +7,9 @@ inputs:
   name: 
     description: "The name of the stack. If missing, it will use the one in your okteto-stacks.yml file"
     required: false
+  file: 
+    description: "Path to the manifest file"
+    required: false
   working-directory:
     description: "Working directory, defaults to the root of the repo"
     required: false
@@ -16,6 +19,7 @@ runs:
   args:
     - ${{ inputs.namespace }}
     - ${{ inputs.name }}
+    - ${{ inputs.file }}
     - ${{ inputs.working-directory }}
 branding:
   color: 'green'
