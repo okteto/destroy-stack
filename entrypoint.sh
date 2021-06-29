@@ -3,7 +3,8 @@ set -e
 
 namespace=$1
 name=$2
-wd=$3
+file=$3
+wd=$4
 
 params=""
 
@@ -13,6 +14,10 @@ fi
 
 if [ ! -z "$name" ]; then
 params="${params} --name $name"
+fi
+
+if [ ! -z "$file" ]; then
+params="${params} --file $file"
 fi
 
 if [ ! -z "$wd" ]; then
