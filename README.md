@@ -29,7 +29,7 @@ The working directory of the action. Defaults to the root folder of the repo.
 
 # Example usage
 
-This example runs the login action and then destroys the stack
+This example runs the context action and then destroys the stack
 
 ```yaml
 # File: .github/workflows/workflow.yml
@@ -43,13 +43,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - uses: okteto/login@master
+    - uses: okteto/context@latest
       with:
         token: ${{ secrets.OKTETO_TOKEN }}
     
-    - uses: okteto/namespace@master
+    - uses: okteto/namespace@latest
 
     - name: "Destroy stack"
-      uses: okteto/destroy-stack@master  
+      uses: okteto/destroy-stack@latest  
 ```
 
