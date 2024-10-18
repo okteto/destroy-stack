@@ -11,6 +11,8 @@ This GitHub Action is now **deprecated** and will no longer receive updates or m
 3. **Compatibility Issues:** Future changes to GitHub Actions or dependencies may cause this action to break or function improperly.
 4. **No Support:** We will no longer provide support for any issues or questions related to this action.
 
+Learn more about our support for GitHub Actions [in our documentation](https://www.okteto.com/docs/reference/supported-github-actions/#available-actions).
+
 # GitHub Actions for Okteto Cloud
 
 ## Automate your development workflows using Github Actions and Okteto Cloud
